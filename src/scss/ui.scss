@@ -8,21 +8,17 @@
 
 //============ МОДУЛИ ====================
 
+.tagline {
+	font-family: $font-gogol;
+	font-size: 1.5rem;
+	line-height: 110%;
+}
+
 .title {
-	font-weight: 500;
-	line-height: 130%;
-	font-size: 1.625rem;
-	letter-spacing: -0.04875rem;
-	@media (min-width: $md4) {
-		letter-spacing: -0.0675rem;
-		font-size: 2.25rem;
-	}
-	& span {
-		border-radius: 6.25rem;
-		background: #e5ddf1;
-		display: inline-block;
-		padding: 0 0.25rem;
-	}
+	font-family: $font-vela;
+	font-size: 2.5rem;
+	line-height: 120%;
+	letter-spacing: -0.09375rem;
 }
 
 .subtitle {
