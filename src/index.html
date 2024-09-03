@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'City Dent'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                <section class="main">
+                    <div class="main__container">
+                        <div class="main__body">
+                            <div class="main__offer">
+                                <h1 class="main__title">
+                                    Проверенная стоматология №1 в&nbsp;Челябинске
+                                </h1>
+                                <p class="main__subtitle">
+                                    Современные зубные протезы, полная жевательная функция, естественная эстетика, безболезненность: наши зубные протезы — ваше решение проблем с зубами!
+                                </p>
+                                <div class="main__btns">
+                                    <a href="#consult" data-fancybox class="main__btn btn btn-primary">Рассчитать цену</a>
+                                    <a href="tel:+73512005235" class="main__btn btn btn-primary-outline icon-phone">
+                                        +7 (351) 200-52-35
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="main__list">
+                                <li class="main__list-item">
+                                    <div class="main__list-icon">
+                                        <img src="@img/icons/benefit-1.svg" alt="icon">
+                                    </div>
+                                    Выглядят и чувствуются как&nbsp;настоящие зубы
+                                </li>
+                                <li class="main__list-item">
+                                    <div class="main__list-icon">
+                                        <img src="@img/icons/benefit-2.svg" alt="icon">
+                                    </div>
+                                    Восстанавливают <br> жевательную функцию
+                                </li>
+                                <li class="main__list-item">
+                                    <div class="main__list-icon">
+                                        <img src="@img/icons/benefit-3.svg" alt="icon">
+                                    </div>
+                                    Не выпадают <br> и не натирают
+                                </li>
+                                <li class="main__list-item">
+                                    <div class="main__list-icon">
+                                        <img src="@img/icons/benefit-4.svg" alt="icon">
+                                    </div>
+                                    Доступные цены <br> и&nbsp;бонусная&nbsp;карта -15%
+                                </li>
+                            </ul>
+                            <div class="main__image">
+                                <img src="@img/promo-girl-mobile.png" alt="Фото девушки">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="quiz">
+                    <div class="quiz__container">
+                        <h2 class="quiz__title title">
+                            Предоставим полный расчет стоимости <span>и зафиксируем цену</span> под&nbsp;ваш случай
+                        </h2>
+                        <p class="quiz__subtitle subtitle">
+                            Эксклюзивное предложение для жителей Челябинска! Ответьте на 5 вопросов и получите в подарок:
+                        </p>
+                        <div class="quiz__sale">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="quiz__sale-block">
+                                        <div class="quiz__sale-price">
+                                            <div class="quiz__sale-price-current">
+                                                0 ₽
+                                            </div>
+                                            <div class="quiz__sale-price-old">
+                                                4 500 ₽
+                                            </div>
+                                        </div>
+                                        <div class="quiz__sale-text">Панорамный <br> снимок&nbsp;зубов</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="quiz__sale-block">
+                                        <div class="quiz__sale-price">
+                                            <div class="quiz__sale-price-current">
+                                                0 ₽
+                                            </div>
+                                            <div class="quiz__sale-price-old">
+                                                3 500 ₽
+                                            </div>
+                                        </div>
+                                        <div class="quiz__sale-text">Обследование новым <br> 3D-сканером</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="quiz__sale-block">
+                                        <div class="quiz__sale-price">
+                                            <div class="quiz__sale-price-current">
+                                                0 ₽
+                                            </div>
+                                            <div class="quiz__sale-price-old">
+                                                2 500 ₽
+                                            </div>
+                                        </div>
+                                        <div class="quiz__sale-text">
+                                            Консультация врача <br> с&nbsp;опытом 21+ лет
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="quiz__sale-block">
+                                        <div class="quiz__sale-price">
+                                            <div class="quiz__sale-price-current">
+                                                0 ₽
+                                            </div>
+                                            <div class="quiz__sale-price-old">
+                                                2 500 ₽
+                                            </div>
+                                        </div>
+                                        <div class="quiz__sale-text">
+                                            План лечения и расчет <br> стоимости
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <img src="@img/quiz-widget.png" alt="Quiz">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="benefits" class="why">
+                    <div class="why__container">
+                        <h2 class="why__title title">
+                            Почему выбирают наши протезы <span>и доверяют нашим врачам</span>
+                        </h2>
+                        <ul class="why__list">
+                            <li class="why__item">
+                                <div class="why__item-image">
+                                    <img src="@img/why/01.png" class="cover-image" alt="Изображание">
+                                </div>
+                                <div class="why__item-title">
+                                    Возвращаем уверенный
+                                    и&nbsp;привлекательный вид
+                                </div>
+                                <div class="why__item-desc">Никто не догадается, <br> что зубы не ваши </div>
+                            </li>
+                            <li class="why__item">
+                                <div class="why__item-image">
+                                    <img src="@img/why/02.png" class="cover-image" alt="Изображание">
+                                </div>
+                                <div class="why__item-title">
+                                    Делаем 3 452+ <br> протезов в год
+                                </div>
+                                <div class="why__item-desc">Моделируем вашу улыбку благодаря современным технологиям и лучшим материалам для протезов</div>
+                            </li>
+                            <li class="why__item">
+                                <div class="why__item-image">
+                                    <img src="@img/why/03.png" class="cover-image" alt="Изображание">
+                                </div>
+                                <div class="why__item-title">
+                                    Вы сможете есть любимые блюда, даже шашлык
+                                </div>
+                                <div class="why__item-desc">Технология полностью восстанавливает жевательную функцию</div>
+                            </li>
+                            <li class="why__item">
+                                <div class="why__item-image">
+                                    <img src="@img/why/04.png" class="cover-image" alt="Изображание">
+                                </div>
+                                <div class="why__item-title">
+                                    Омолодите <br> лицо
+                                </div>
+                                <div class="why__item-desc">
+                                    Сияющая улыбка придаст лицу счастливый и подтянутый вид
+                                </div>
+                            </li>
+                            <li class="why__item">
+                                <div class="why__item-image">
+                                    <img src="@img/why/05.png" class="cover-image" alt="Изображание">
+                                </div>
+                                <div class="why__item-title">
+                                    Вы сможете говорить&nbsp;четко
+                                </div>
+                                <div class="why__item-desc">
+                                    Ваша дикция будет как с родными зубами. для этого не придется долго тренироваться
+                                </div>
+                            </li>
+                            <li class="why__item">
+                                <div class="why__item-image">
+                                    <img src="@img/why/06.png" class="cover-image" alt="Изображание">
+                                </div>
+                                <div class="why__item-title">
+                                    Протезы комфортные,
+                                    не&nbsp;натирают и не выпадают
+                                </div>
+                                <div class="why__item-desc">
+                                    За счет надежной фиксации и современных креплений
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="team" class="team">
+                    <div class="team__container">
+                        <h2 class="team__title title">
+                            Мы собрали лучших врачей–<span>профессионалов</span> своего дела
+                        </h2>
+                        <div class="team__content">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="team__card">
+                                        <div class="team__card-image">
+                                            <img src="@img/team/01.jpg" class="cover-image" alt="Фото">
+                                        </div>
+                                        <div class="team__card-body">
+                                            <div class="team__card-name">Зимина Наталья Сергеевна</div>
+                                            <div class="team__card-desc">Врач-стоматолог: ортопед высшей категории</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="team__card">
+                                        <div class="team__card-image">
+                                            <img src="@img/team/02.jpg" class="cover-image" alt="Фото">
+                                        </div>
+                                        <div class="team__card-body">
+                                            <div class="team__card-name">Вихров Андрей Валерьевич</div>
+                                            <div class="team__card-desc">Главный врач, стоматолог-хирург-имплантолог высшей категории. Стаж работы более 20 лет.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="team__card">
+                                        <div class="team__card-image">
+                                            <img src="@img/team/03.jpg" class="cover-image" alt="Фото">
+                                        </div>
+                                        <div class="team__card-body">
+                                            <div class="team__card-name">Данилян Спартак Сарменович</div>
+                                            <div class="team__card-desc">Врач-стоматолог:хирург имплантолог</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="reviews" class="reviews">
+                    <div class="reviews__container">
+                        <h2 class="reviews__title title">
+                            <span>Видео-отзывы</span> наших клиентов
+                        </h2>
+                        <div class="reviews__slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="reviews__slide swiper-slide">
+                                        <div class="reviews__slide-image">
+                                            <img src="@img/reviews/01.jpg" class="cover-image" alt="Постер Видео">
+                                            <a href="" class="reviews__slide-btn btn btn-secondary">
+                                                Смотреть видео
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__slide swiper-slide">
+                                        <div class="reviews__slide-image">
+                                            <img src="@img/reviews/02.jpg" class="cover-image" alt="Постер Видео">
+                                            <a href="" class="reviews__slide-btn btn btn-secondary">
+                                                Смотреть видео
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__slide swiper-slide">
+                                        <div class="reviews__slide-image">
+                                            <img src="@img/reviews/03.jpg" class="cover-image" alt="Постер Видео">
+                                            <a href="" class="reviews__slide-btn btn btn-secondary">
+                                                Смотреть видео
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__slide swiper-slide">
+                                        <div class="reviews__slide-image">
+                                            <img src="@img/reviews/04.jpg" class="cover-image" alt="Постер Видео">
+                                            <a href="" class="reviews__slide-btn btn btn-secondary">
+                                                Смотреть видео
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__slide swiper-slide">
+                                        <div class="reviews__slide-image">
+                                            <img src="@img/reviews/01.jpg" class="cover-image" alt="Постер Видео">
+                                            <a href="" class="reviews__slide-btn btn btn-secondary">
+                                                Смотреть видео
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__slide swiper-slide">
+                                        <div class="reviews__slide-image">
+                                            <img src="@img/reviews/02.jpg" class="cover-image" alt="Постер Видео">
+                                            <a href="" class="reviews__slide-btn btn btn-secondary">
+                                                Смотреть видео
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__slide swiper-slide">
+                                        <div class="reviews__slide-image">
+                                            <img src="@img/reviews/03.jpg" class="cover-image" alt="Постер Видео">
+                                            <a href="" class="reviews__slide-btn btn btn-secondary">
+                                                Смотреть видео
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__slide swiper-slide">
+                                        <div class="reviews__slide-image">
+                                            <img src="@img/reviews/04.jpg" class="cover-image" alt="Постер Видео">
+                                            <a href="" class="reviews__slide-btn btn btn-secondary">
+                                                Смотреть видео
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__prev swiper-button-prev"></div>
+                            <div class="reviews__next swiper-button-next"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="banner">
+                    <div class="banner__container">
+                        <div class="banner__body">
+                            <div class="banner__offer">
+                                <h2 class="banner__title">
+                                    Получите детальный план лечения
+                                </h2>
+                                <p class="banner__subtitle">
+                                    Запишитесь на бесплатный осмотр у стоматолога и 3D-снимок зубов
+                                </p>
+                                <div class="banner__btns">
+                                    <a href="#callback" data-fancybox class="banner__btn btn btn-primary">Оставить заявку</a>
+                                    <a href="tel:+73512005235" class="banner__btn btn btn-primary-outline icon-phone">+7 (351) 200-52-35</a>
+                                </div>
+                            </div>
+                            <div class="banner__image">
+                                <img src="@img/banner.png" class="cover-image" alt="banner">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="clients">
+                    <div class="clients__container">
+                        <h2 class="clients__title title">
+                            Отзывы клиентов в <img src="@img/icons/pin.svg" alt="pin"> Яндекс.Картах
+                        </h2>
+                        <div class="clients__widget">
+                            <img src="@img/reviews-widget.png" alt="Виджет">
+                        </div>
+                    </div>
+                </section>
+                <section id="promotions" class="promotions">
+                    <div class="promotions__container">
+                        <h2 class="promotions__title title">
+                            <span>Акции месяца</span>
+                        </h2>
+                        <div class="promotions__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="promotions__card swiper-slide">
+                                    <span>Скидка до -30%</span>
+                                    на современные протезы
+                                </div>
+                                <div class="promotions__card swiper-slide">
+                                    <span>Доступный кредит</span>
+                                    в этом месяце
+                                </div>
+                                <div class="promotions__card swiper-slide">
+                                    <span>Скидка -15%</span>
+                                    по бонусной карте
+                                </div>
+                            </div>
+                            <div class="promotions__prev swiper-button-prev"></div>
+                            <div class="promotions__next swiper-button-next"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feedback">
+                    <div class="feedback__container">
+                        <div class="feedback__body">
+                            <div class="feedback__header">
+                                <div class="feedback__main">
+                                    <h2 class="feedback__title title">
+                                        Ждем вашего визита
+                                    </h2>
+                                    <p class="feedback__subtitle">
+                                        Мы перезвоним вам, чтобы уточнить желаемое время и дату посещения клиники.
+                                    </p>
+                                </div>
+                                <div class="feedback__decor">
+                                    <img src="@img/feedback.svg" alt="feedback">
+                                </div>
+                            </div>
+                            <form action="#" class="feedback__form">
+                                <div class="feedback__form-row">
+                                    <input type="text" class="form__input" name="name" placeholder="Имя">
+                                    <input type="tel" class="form__input" name="phone" placeholder="+ 7 (999) 999-99-99">
+                                    <button class="btn btn-primary">Записаться на прием</button>
+                                </div>
+                                <label class="form__checkbox">
+                                    <input type="checkbox" name="privacy" class="form__checkbox-input hidden" hidden>
+                                    <span class="form__checkbox-content">
+                                        Я согласен с <a href="">политикой конфиденциальности</a>
+                                    </span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section id="contacts" class="contacts">
+                    <div class="contacts__container">
+                        <h2 class="contacts__title title"><span>Контакты</span></h2>
+                        <div class="contacts__body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="contacts__item">
+                                        <div class="contacts__item-caption">Звоните, мы на связи:</div>
+                                        <a href="tel:+73512005235" class="contacts__item-value">+7 (351) 200-52-35</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="contacts__item">
+                                        <div class="contacts__item-caption">Время работы:</div>
+                                        <div class="contacts__item-value">Ежедневно 9:00–21:00</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-12">
+                                    <div class="contacts__item">
+                                        <div class="contacts__item-caption">Адрес:</div>
+                                        <address class="contacts__item-value">г. Челябинск, Пр-т Ленина, 26А/2, БЦ БОВИД, 4 этаж</address>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="contacts__map">
+                                        <img src="@img/map.jpg" class="cover-image" alt="Карта">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            </div>
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {
+            "map": false
+            })
+    </body>
+</html>
