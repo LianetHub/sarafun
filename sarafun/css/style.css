@@ -9,8 +9,8 @@
 @font-face {
   font-family: "Onest";
   font-display: swap;
-  src: url("../fonts/Onest-Regular.woff") format("woff"), url("../fonts/Onest-Regular.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/Onest-Medium.woff") format("woff"), url("../fonts/Onest-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -23,20 +23,23 @@
 }
 
 @font-face {
-  font-family: "Onest";
-  font-display: swap;
-  src: url("../fonts/Onest-Medium.woff") format("woff"), url("../fonts/Onest-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "VelaSans";
   font-display: swap;
   src: url("../fonts/VelaSans-Medium.woff") format("woff"), url("../fonts/VelaSans-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Onest";
+  font-display: swap;
+  src: url("../fonts/Onest-Regular.woff") format("woff"), url("../fonts/Onest-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.no-webp body {
+  background: url("../img/bg.jpg") 0 0/cover repeat-y; }
 
 body {
   font-family: "Onest", sans-serif;
@@ -1242,3 +1245,5 @@ body.lock {
     color: #fff;
   }
 }
+
+.webp body { background: url(../img/bg.webp) 0 0/cover repeat-y; }

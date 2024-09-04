@@ -58,6 +58,7 @@ body {
 	line-height: normal;
 	background: #fff;
 	color: $text;
+	background: url("@img/bg.jpg") 0 0 / cover repeat-y;
 	&.lock {
 		overflow: hidden;
 		@media (min-width: $md2) {
