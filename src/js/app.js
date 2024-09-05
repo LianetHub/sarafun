@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     devFunctions.OS();
     devFunctions.isWebp();
-    devFunctions.intInputMask();
 
 
     // event handlers
@@ -35,55 +34,74 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.header').classList.toggle('open-menu');
     }
 
-
-
     //  sliders
 
 
-    if (document.querySelector('.reviews__slider')) {
-        new Swiper('.reviews__slider .swiper', {
+    if (document.querySelector('.header__slider')) {
+        new Swiper('.header__slider', {
             slidesPerView: 1,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: '.reviews__next',
-                prevEl: '.reviews__prev'
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                stopOnLastSlide: false,
             },
             breakpoints: {
-                743.98: {
+                575.98: {
                     slidesPerView: 2,
-                    spaceBetween: 10,
+                },
+                767.98: {
+                    slidesPerView: 3,
                 },
                 991.98: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-                1199.98: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
+                    slidesPerView: 5,
                 }
             }
-
-        })
+        });
     }
-    if (document.querySelector('.promotions__slider')) {
-        new Swiper('.promotions__slider', {
-            slidesPerView: "auto",
-            spaceBetween: 20,
-            navigation: {
-                nextEl: '.promotions__next',
-                prevEl: '.promotions__prev'
-            },
+
+
+
+    if (document.querySelector('.mission__slider')) {
+        new Swiper('.mission__slider', {
+            slidesPerView: 2,
+            initialSlide: 2,
+            centeredSlides: true,
+            grabCursor: true,
+            loop: true,
+            spaceBetween: 10,
             breakpoints: {
-
-                991.98: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-
+                767.98: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 53,
+                }
             }
+        });
 
-        })
+
     }
+
+
+
+    // convert animation
+    const convert = document.querySelector('.annual__convert');
+
+    if (convert) {
+
+        const callback = function (entries, observer) {
+            if (entries[0].isIntersecting) {
+                convert.classList.add('active');
+            }
+        };
+
+        const convertObserver = new IntersectionObserver(callback);
+        convertObserver.observe(convert);
+    }
+
+
+    Fancybox.show([{
+        src: "#join",
+        closeButton: false
+    }])
 
 
 })
