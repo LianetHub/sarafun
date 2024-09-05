@@ -98,10 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    Fancybox.show([{
-        src: "#join",
-        closeButton: false
-    }])
 
 
 })
