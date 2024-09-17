@@ -29,12 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (target.closest('.header__video')) {
             let video = target.closest('.header__video');
+            let sliderInstance = document.querySelector('.header__slider').swiper;
+
 
             if (video.muted) {
                 video.muted = false;
+                sliderInstance.autoplay.pause();
             } else {
                 video.muted = true;
+                sliderInstance.autoplay.resume();
             }
+
+
         }
 
     });

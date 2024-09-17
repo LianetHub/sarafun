@@ -15,17 +15,17 @@
 }
 
 @font-face {
-  font-family: "Onest";
+  font-family: "VelaSans";
   font-display: swap;
-  src: url("../fonts/Onest-Regular.woff") format("woff"), url("../fonts/Onest-Regular.woff2") format("woff2");
+  src: url("../fonts/VelaSans-Regular.woff") format("woff"), url("../fonts/VelaSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "VelaSans";
+  font-family: "Onest";
   font-display: swap;
-  src: url("../fonts/VelaSans-Regular.woff") format("woff"), url("../fonts/VelaSans-Regular.woff2") format("woff2");
+  src: url("../fonts/Onest-Regular.woff") format("woff"), url("../fonts/Onest-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -45,13 +45,14 @@ body {
   min-height: 100%;
   line-height: normal;
   color: #1e1e1e;
+  background-attachment: fixed;
 }
 
 .no-webp body.no-webp {
-  background: url("../img/bg.png") 0 0/cover repeat-y, #fbfbfb; }
+  background: url("../img/bg.png") 0 0/contain, #fbfbfb; }
 
 body.webp {
-  background: url(../img/bg.webp) 0 0/cover repeat-y, #fbfbfb;
+  background: url("../img/bg.webp") 0 0/contain, #fbfbfb;
 }
 
 body.lock {
@@ -114,7 +115,7 @@ body.lock {
 }
 
 .popup.popup-lg {
-  max-width: 42.5rem;
+  max-width: 35rem;
 }
 
 .popup__body {
@@ -1063,6 +1064,11 @@ body.lock {
   font-size: 0.875rem;
 }
 
+.founders__item-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+}
+
 .opportunities {
   padding: 3.125rem 0;
 }
@@ -1284,7 +1290,7 @@ body.lock {
   }
 
   .popup__productions {
-    padding: 0.62rem 0.62rem 0.62rem 8.13rem;
+    padding: 0.62rem;
   }
 
   .popup__productions-body {
@@ -1948,4 +1954,4 @@ body.lock {
   }
 }
 
-.webp body.no-webp { background: url(../img/bg.webp) 0 0/cover repeat-y, #fbfbfb; }
+.webp body.no-webp { background: url(../img/bg.webp) 0 0/contain, #fbfbfb; }

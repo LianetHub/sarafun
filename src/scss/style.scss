@@ -56,11 +56,12 @@ body {
 	min-height: 100%;
 	line-height: normal;
 	color: $text;
+	background-attachment: fixed;
 	&.no-webp {
-		background: url('../img/bg.png') 0 0 / cover repeat-y, #fbfbfb;
+		background: url('@img/bg.png') 0 0 / contain, #fbfbfb;
 	}
 	&.webp {
-		background: url(../img/bg.webp) 0 0 / cover repeat-y, #fbfbfb;
+		background: url('@img/bg.webp') 0 0 / contain, #fbfbfb;
 	}
 	&.lock {
 		overflow: hidden;
@@ -407,6 +408,10 @@ body {
 			font-size: 1rem;
 			margin-top: 1.88rem;
 		}
+	}
+	&__item-link {
+		display: inline-block;
+		margin-top: rem(20);
 	}
 }
 

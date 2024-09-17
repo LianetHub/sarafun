@@ -30,7 +30,7 @@
 	background: none;
 	max-width: 36.25rem;
 	&.popup-lg {
-		max-width: 42.5rem;
+		max-width: rem(560);
 	}
 	// .popup__body
 	&__body {
@@ -85,7 +85,7 @@
 		width: 100%;
 		padding: 0.31em;
 		@media (min-width: $md5) {
-			padding: 0.62rem 0.62rem 0.62rem 8.13rem;
+			padding: 0.62rem;
 		}
 	}
 	&__productions-body {
