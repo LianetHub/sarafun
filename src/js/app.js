@@ -27,6 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
             getMenu()
         }
 
+        if (target.closest('.header__video')) {
+            let video = target.closest('.header__video');
+
+            if (video.muted) {
+                video.muted = false;
+            } else {
+                video.muted = true;
+            }
+        }
+
     });
 
     function getMenu() {

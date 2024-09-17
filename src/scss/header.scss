@@ -146,6 +146,16 @@
 	&__slide {
 		height: auto;
 	}
+	&__video {
+		max-width: 100%;
+		width: 100%;
+		object-fit: cover;
+		height: auto;
+		aspect-ratio: math.div(244, 350);
+		border: rem(1) solid #1e1e1e;
+		cursor: pointer;
+	}
+
 	// .header__image
 	&__image {
 		border: rem(1) solid #1e1e1e;

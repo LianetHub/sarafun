@@ -38,12 +38,12 @@
 	<meta property="twitter:image:src" content="/OG.png">
 	<!-- Twitter -->
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20240905235119">
-	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20240905235119">
-	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20240905235119">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20240917115059">
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20240917115059">
+	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20240917115059">
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20240905235119">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240905235119">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20240917115059">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240917115059">
 </head>
 
 <body>
@@ -72,11 +72,10 @@
 					<div class="header__slider swiper">
 						<div class="swiper-wrapper">
 							<div class="header__slide swiper-slide">
-								<div class="header__image">
-									<picture>
-										<source srcset="img/slider/1.webp" type="image/webp"><img src="img/slider/1.jpg" alt="изображение">
-									</picture>
-								</div>
+								<video class="header__video" muted="" loop="" playsinline="" autoplay="true" poster="img/poster.jpg">
+									<source src="./files/video.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+									<source src="./files/video.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+								</video>
 							</div>
 							<div class="header__slide swiper-slide">
 								<div class="header__image">
@@ -93,7 +92,7 @@
 								</div>
 							</div>
 							<div class="header__slide swiper-slide">
-								<a href="" class="header__join">
+								<a href="#join" data-fancybox="" class="header__join">
 									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M6.00002 0.666687V11.3334M0.666687 6.00002H11.3334" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
 									</svg> Присоединиться </a>
@@ -112,8 +111,8 @@
 						<div class="header__bottom-icon">
 							<img src="img/icons/heart.svg" alt="Иконка">
 						</div>
-						<div class="header__bottom-scroll"> SCROLL <img src="img/icons/arrow.svg" alt="Иконка">
-						</div>
+						<a href="#values" class="header__bottom-scroll"> SCROLL <img src="img/icons/arrow.svg" alt="Иконка">
+						</a>
 					</div>
 					<a href="#join" data-fancybox="" class="header__join header__join-mobile"> Присоединиться <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
 							<path d="M5.49996 1.66669V8.33335M2.16663 5.00002H8.83329" stroke="#1E1E1E" stroke-linecap="square" stroke-linejoin="round"></path>
@@ -123,7 +122,7 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="values">
+			<section id="values" class="values">
 				<div class="values__container">
 					<div class="values__tagline tagline"> [ценности] </div>
 					<h2 class="values__title title-md"> Ценности клуба <br> <span>Sarafun</span>
@@ -206,7 +205,7 @@
 							<li class="founders__item">
 								<div class="founders__item-image">
 									<picture>
-										<source srcset="img/founder.webp" type="image/webp"><img src="img/founder.png" class="cover-image" alt="founder">
+										<source srcset="img/founders/01.webp" type="image/webp"><img src="img/founders/01.jpg" class="cover-image" alt="founder">
 									</picture>
 								</div>
 								<div class="founders__item-name">Карина Багирова</div>
@@ -215,7 +214,7 @@
 							<li class="founders__item">
 								<div class="founders__item-image">
 									<picture>
-										<source srcset="img/founder.webp" type="image/webp"><img src="img/founder.png" class="cover-image" alt="founder">
+										<source srcset="img/founders/02.webp" type="image/webp"><img src="img/founders/02.jpg" class="cover-image" alt="founder">
 									</picture>
 								</div>
 								<div class="founders__item-name">Илоанга Ершова</div>
@@ -224,7 +223,7 @@
 							<li class="founders__item">
 								<div class="founders__item-image">
 									<picture>
-										<source srcset="img/team.webp" type="image/webp"><img src="img/team.jpg" class="cover-image" alt="founder">
+										<source srcset="img/founders/03.webp" type="image/webp"><img src="img/founders/03.jpg" class="cover-image" alt="founder">
 									</picture>
 								</div>
 								<div class="founders__item-name">Мария Семенова</div>
@@ -374,17 +373,17 @@
 						<div class="footer__column-block">
 							<div class="footer__column-item">
 								<div class="footer__column-caption">Телефон</div>
-								<a href="tel:+71234567890" class="footer__column-value">+7 (123) 456-78-90</a>
+								<a href="tel:+79251974330" class="footer__column-value">+7 925 197 43 30</a>
 							</div>
 						</div>
 						<div class="footer__column-block">
 							<div class="footer__column-item order-last-mobile">
 								<div class="footer__column-caption">Соц.сети</div>
 								<div class="footer__socials">
-									<a href="" class="footer__socials-item">
+									<a href="https://t.me/+79251974330" target="_blank" class="footer__socials-item">
 										<img src="img/icons/telegram.svg" alt="Иконка соцсети">
 									</a>
-									<a href="" class="footer__socials-item">
+									<a href="https://wa.me/79251974330" target="_blank" class="footer__socials-item">
 										<img src="img/icons/whatsapp.svg" alt="Иконка соцсети">
 									</a>
 								</div>
@@ -419,7 +418,7 @@
 				<div class="footer__bottom">
 					<div class="footer__copy">© Женский клуб «Sarafun»</div>
 					<a href="" class="footer__privacy">Политика конфиденциальности</a>
-					<a href="" class="footer__prod">Разработка сайта — Dina &amp; Marat</a>
+					<a href="#prod" data-fancybox="" class="footer__prod">Разработка сайта — Dina &amp; Marat</a>
 				</div>
 			</div>
 		</footer>
@@ -439,11 +438,41 @@
 					<button class="form__btn btn btn-secondary">Записаться на прием</button>
 				</form>
 			</div>
+		</div>
+		<div id="prod" class="popup popup-lg">
+			<div class="popup__productions">
+				<div class="popup__productions-body">
+					<button type="button" class="popup__close" data-fancybox-close=""></button>
+					<h3 class="popup__title title-sm">Разработка сайта</h3>
+					<div class="popup__productions-images">
+						<div class="popup__productions-image">
+							<picture>
+								<source srcset="img/marat.webp" type="image/webp"><img src="img/marat.png" class="cover-image" alt="Марат">
+							</picture>
+						</div>
+						<div class="popup__productions-image">
+							<picture>
+								<source srcset="img/dina.webp" type="image/webp"><img src="img/dina.png" class="cover-image" alt="Дина">
+							</picture>
+						</div>
+					</div>
+					<ul class="popup__productions-list">
+						<li class="popup__productions-item">
+							<a href="" class="popup__productions-name">Марат Шарипов (telegram)</a>
+							<p class="popup__productions-desc">разработка, реклама и&nbsp;продвижение</p>
+						</li>
+						<li class="popup__productions-item">
+							<a href="" class="popup__productions-name">Дина Давлетшина (telegram)</a>
+							<p class="popup__productions-desc">дизайн сайта</p>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div> <!-- plugnis -->
-		<script src="js/libs/swiper-bundle.min.js?_v=20240905235119"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20240905235119"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20240917115059"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20240917115059"></script>
 		<!-- plugnis -->
-		<script src="js/app.min.js?_v=20240905235119"></script>
+		<script src="js/app.min.js?_v=20240917115059"></script>
 	</section>
 </body>
 

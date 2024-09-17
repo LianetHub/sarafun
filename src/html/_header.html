@@ -25,9 +25,10 @@
             <div class="header__slider swiper">
                 <div class="swiper-wrapper">
                     <div class="header__slide swiper-slide">
-                        <div class="header__image">
-                            <img src="@img/slider/1.jpg" alt="изображение">
-                        </div>
+                        <video class="header__video" muted loop playsinline autoplay="true" poster="@img/poster.jpg">
+                            <source src="./files/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                            <source src="./files/video.webm" type='video/webm; codecs="vp8, vorbis"' />
+                        </video>
                     </div>
                     <div class="header__slide swiper-slide">
                         <div class="header__image">
@@ -40,7 +41,7 @@
                         </div>
                     </div>
                     <div class="header__slide swiper-slide">
-                        <a href="" class="header__join">
+                        <a href="#join" data-fancybox class="header__join">
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.00002 0.666687V11.3334M0.666687 6.00002H11.3334" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" />
                             </svg>
@@ -61,9 +62,9 @@
                 <div class="header__bottom-icon">
                     <img src="@img/icons/heart.svg" alt="Иконка">
                 </div>
-                <div class="header__bottom-scroll">
+                <a href="#values" class="header__bottom-scroll">
                     SCROLL <img src="@img/icons/arrow.svg" alt="Иконка">
-                </div>
+                </a>
             </div>
             <a href="#join" data-fancybox class="header__join header__join-mobile">
                 Присоединиться

@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "Onest";
-  font-display: swap;
-  src: url("../fonts/Onest-Medium.woff") format("woff"), url("../fonts/Onest-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Gogol";
   font-display: swap;
   src: url("../fonts/Gogol-Regular.woff") format("woff"), url("../fonts/Gogol-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  font-display: swap;
+  src: url("../fonts/Onest-Medium.woff") format("woff"), url("../fonts/Onest-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -25,21 +25,18 @@
 @font-face {
   font-family: "VelaSans";
   font-display: swap;
-  src: url("../fonts/VelaSans-Medium.woff") format("woff"), url("../fonts/VelaSans-Medium.woff2") format("woff2");
-  font-weight: 500;
+  src: url("../fonts/VelaSans-Regular.woff") format("woff"), url("../fonts/VelaSans-Regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "VelaSans";
   font-display: swap;
-  src: url("../fonts/VelaSans-Regular.woff") format("woff"), url("../fonts/VelaSans-Regular.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/VelaSans-Medium.woff") format("woff"), url("../fonts/VelaSans-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
-
-.no-webp body {
-  background: url("../img/bg.png") 0 0/cover repeat-y, #fbfbfb; }
 
 body {
   font-family: "Onest", sans-serif;
@@ -47,8 +44,14 @@ body {
   min-width: 320px;
   min-height: 100%;
   line-height: normal;
-  background: #fff;
   color: #1e1e1e;
+}
+
+.no-webp body.no-webp {
+  background: url("../img/bg.png") 0 0/cover repeat-y, #fbfbfb; }
+
+body.webp {
+  background: url(../img/bg.webp) 0 0/cover repeat-y, #fbfbfb;
 }
 
 body.lock {
@@ -110,6 +113,10 @@ body.lock {
   max-width: 36.25rem;
 }
 
+.popup.popup-lg {
+  max-width: 42.5rem;
+}
+
 .popup__body {
   position: relative;
   width: 100%;
@@ -167,6 +174,76 @@ body.lock {
 
 .popup__form .btn {
   border-radius: 0.9375rem;
+}
+
+.popup__productions {
+  background: #fff;
+  color: #1e1e1e;
+  width: 100%;
+  padding: 0.31em;
+}
+
+.popup__productions-body {
+  border: 1px dashed #998755;
+  padding: 1.56rem;
+}
+
+.popup__productions-body .popup__close {
+  position: absolute;
+  top: 0.31rem;
+  right: 0.31rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M5 5L19 19M5 19L19 5' stroke='%23B41A24' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.popup__title {
+  font-weight: 500;
+}
+
+.popup__productions-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.56rem;
+}
+
+.popup__productions-image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 4.375rem;
+  height: 4.375rem;
+}
+
+.popup__productions-image img {
+  border-radius: 50%;
+}
+
+.popup__productions-image:not(:last-child) {
+  margin-right: -1.25rem;
+}
+
+.popup__productions-list {
+  margin-top: 1.56rem;
+}
+
+.popup__productions-item:not(:last-child) {
+  margin-bottom: 1.56rem;
+}
+
+.popup__productions-name {
+  font-size: 1rem;
+  line-height: 120%;
+  letter-spacing: -0.03125rem;
+  font-weight: 500;
+  line-height: 120%;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+.popup__productions-desc {
+  margin-top: 0.63rem;
+  color: rgba(30, 30, 30, 0.4);
+  line-height: 120%;
+  font-size: 0.875rem;
 }
 
 .tagline {
@@ -568,6 +645,17 @@ body.lock {
   height: auto;
 }
 
+.header__video {
+  max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  aspect-ratio: 0.6971428571;
+  border: 0.0625rem solid #1e1e1e;
+  cursor: pointer;
+}
+
 .header__image {
   border: 0.0625rem solid #1e1e1e;
 }
@@ -821,6 +909,16 @@ body.lock {
   transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
 }
 
+.values__item-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.4);
+}
+
 .values__item-text {
   position: absolute;
   top: 50%;
@@ -831,6 +929,8 @@ body.lock {
   width: 100%;
   padding: 0.625rem;
   font-size: 0.875rem;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .mission {
@@ -946,6 +1046,8 @@ body.lock {
   border-radius: 0;
   -webkit-transition: border-radius 0.3s ease 0s;
   transition: border-radius 0.3s ease 0s;
+  -o-object-position: center 30%;
+     object-position: center 30%;
 }
 
 .founders__item-name {
@@ -1179,6 +1281,45 @@ body.lock {
 @media (min-width: 575.98px) {
   [class*=__container] {
     max-width: 33.75rem;
+  }
+
+  .popup__productions {
+    padding: 0.62rem 0.62rem 0.62rem 8.13rem;
+  }
+
+  .popup__productions-body {
+    padding: 1.87rem;
+  }
+
+  .popup__productions-body .popup__close {
+    top: 0.63rem;
+    right: 0.63rem;
+  }
+
+  .popup__productions-images {
+    margin-top: 1.87rem;
+  }
+
+  .popup__productions-image {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+
+  .popup__productions-list {
+    margin-top: 1.87rem;
+  }
+
+  .popup__productions-item:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .popup__productions-name {
+    letter-spacing: -0.0625rem;
+    font-size: 1.375rem;
+  }
+
+  .popup__productions-desc {
+    font-size: 1rem;
   }
 
   .label {
@@ -1737,7 +1878,17 @@ body.lock {
   }
 }
 
+@media (max-width: 575.98px) {
+  .popup__productions-body .popup__title {
+    font-size: 1.375rem;
+  }
+}
+
 @media (any-hover: hover) {
+  .popup__productions-name:hover {
+    color: #b41a24;
+  }
+
   ::-webkit-scrollbar-thumb:hover {
     background: #87141b;
   }
@@ -1784,6 +1935,10 @@ body.lock {
     visibility: visible;
   }
 
+  .values__item:hover .values__item-text {
+    color: #fff;
+  }
+
   .founders__item-image:hover img {
     border-radius: 50%;
   }
@@ -1793,4 +1948,4 @@ body.lock {
   }
 }
 
-.webp body { background: url(../img/bg.webp) 0 0/cover repeat-y, #fbfbfb; }
+.webp body.no-webp { background: url(../img/bg.webp) 0 0/cover repeat-y, #fbfbfb; }
