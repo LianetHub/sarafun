@@ -9,7 +9,23 @@
 @font-face {
   font-family: "Onest";
   font-display: swap;
+  src: url("../fonts/Onest-Regular.woff") format("woff"), url("../fonts/Onest-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  font-display: swap;
   src: url("../fonts/Onest-Medium.woff") format("woff"), url("../fonts/Onest-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VelaSans";
+  font-display: swap;
+  src: url("../fonts/VelaSans-Medium.woff") format("woff"), url("../fonts/VelaSans-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
@@ -22,22 +38,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Onest";
-  font-display: swap;
-  src: url("../fonts/Onest-Regular.woff") format("woff"), url("../fonts/Onest-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "VelaSans";
-  font-display: swap;
-  src: url("../fonts/VelaSans-Medium.woff") format("woff"), url("../fonts/VelaSans-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
 body {
   font-family: "Onest", sans-serif;
   font-size: 1rem;
@@ -46,13 +46,16 @@ body {
   line-height: normal;
   color: #1e1e1e;
   background-attachment: fixed;
+  background-color: #fbfbfb;
+  background-position: 0 0;
+  background-size: 100% auto;
 }
 
 .no-webp body.no-webp {
-  background: url("../img/bg.png") 0 0/contain, #fbfbfb; }
+  background-image: url("../img/bg.png"); }
 
 body.webp {
-  background: url("../img/bg.webp") 0 0/contain, #fbfbfb;
+  background-image: url("../img/bg.webp");
 }
 
 body.lock {
@@ -1954,4 +1957,4 @@ body.lock {
   }
 }
 
-.webp body.no-webp { background: url(../img/bg.webp) 0 0/contain, #fbfbfb; }
+.webp body.no-webp { background-image: url(../img/bg.webp); }
